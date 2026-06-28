@@ -1,0 +1,115 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background: #F0EEE9;
+    color: #54543A;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* Header */
+header {
+    background: #2B2C30;
+    color: #F0EEE9;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeDown 1s ease-out;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #F0EEE9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #F0EEE9;
+}
+
+/* Sections */
+.section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Read More */
+.more-text {
+    display: none;
+    margin-top: 10px;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.read-more-btn {
+    margin-top: 10px;
+    background: #948A78 ;
+    color: #F0EEE9;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background 0.3s;
+}
+
+.read-more-btn:hover {
+    background: #54543A;
+}
+
+.readmore-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: fadeIn 0.4s ease-out;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #F0EEE9;
+    margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
